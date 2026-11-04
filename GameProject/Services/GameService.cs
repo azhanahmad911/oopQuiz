@@ -49,8 +49,10 @@ namespace GameProject.Services
 
         public int CalculateVictoryBonus(Player player)
         {
-
-            return 0;
+            int potionBonus = player.HealingPotions * 10;
+            int healthBonus = player.Health;
+            int totalBonus = healthBonus + potionBonus;
+            return totalBonus;
         }
 
         public void SaveResult(Player player, bool won)
@@ -63,6 +65,7 @@ namespace GameProject.Services
 
         public List<GameResult> GetTopScores(int numberOfScores)
         {
+
             // DIFFICULT STUDENT TODO (service task): build a leaderboard.
             // Requirements:
             // 1. Read all results 

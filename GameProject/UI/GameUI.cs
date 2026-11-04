@@ -118,6 +118,14 @@ namespace GameProject.UI
         private void ShowInstructions()
         {
             // STUDENT TODO (UI task): explain attack, healing, winning, losing,
+            Console.WriteLine("\nYour initial health is 100");
+            Console.WriteLine("You have 3 healing potions avaiable");
+            Console.WriteLine("Your attack damage is 20");
+            Console.WriteLine("When you use a healing potion, your health is increased by 25");
+            Console.WriteLine("\nThe first monster is Slime, with Health of 40, attack power of 8, and score value of 10.");
+            Console.WriteLine("The second monster is Goblin, with Health of 65, attack power of 12, and score value of 20.");
+            Console.WriteLine("The third monster is Dragon, with Health of 100, attack power of 16, and score value of 40.");
+
             // and scoring here. Clear the screen first and call Pause() last.
             Console.WriteLine("\nInstructions have not been completed yet.");
             Pause();
